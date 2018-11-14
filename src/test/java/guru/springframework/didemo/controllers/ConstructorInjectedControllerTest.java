@@ -11,15 +11,15 @@ import static org.junit.Assert.assertEquals;
  */
 public class ConstructorInjectedControllerTest {
 
-    private ConstructerInjectedController constructerInjectedController;
+    private ConstructorInjectedController constructorInjectedController;
 
     @Before
     public void setUp() throws Exception {
-        this.constructerInjectedController = new ConstructerInjectedController(new GreetingServiceImpl());
+        this.constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImpl());
     }
 
     @Test
     public void testGreeting() throws Exception {
-        assertEquals(GreetingServiceImpl.HELLO_GURUS, constructerInjectedController.sayHello());
+        assertEquals(GreetingServiceImpl.HELLO_GURUS, constructorInjectedController.sayHello());
     }
 }
